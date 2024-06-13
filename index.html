@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo-container">
-            <img src="aset/foto.jpeg" alt="Logo" class="logo">
-        </div>
-        <div class="menu">
-            <a>Home</a>
-            <a>profil</a>
-            <a>message</a>
-        </div>
+      <div class="logo-container">
+        <img src="aset/foto.jpeg" alt="Logo" class="logo" />
+      </div>
+      <div class="menu">
+        <a href="#header-con">Home</a>
+        <a href="#profil">profil</a>
+        <a href="#form-message">message</a>
+      </div>
     </nav>
 
     <!-- HOME -->
-    <section class="header-con">
-        <h1>Haloo <span id="name"></span> Welcome to my website</h1>
-        <p>I am a front end developer</p>
-            <img class="daftar" src="aset/one.jpg" alt="">
+    <section class="header-con" id="header-con">
+      <h1>Haloo <span id="name"></span> Welcome to my website</h1>
+      <p>I'm Khafid Khasan Nudin, I am a front end developer</p>
+      <img class="daftar" src="aset/one.jpg" alt="" />
 
-            <img class="daftar" src="aset/two.webp" alt="">
+      <img class="daftar" src="aset/two.webp" alt="" />
 
-            <img class="daftar" src="aset/three.jpg" alt="">
+      <img class="daftar" src="aset/three.jpg" alt="" />
 
-            <img class="daftar" src="aset/networkAd.jpg" alt="">
+      <img class="daftar" src="aset/networkAd.jpg" alt="" />
     </section>
     <!-- <div class="tombol">
         <button onclick="plusDivs(-1)">Prev</button>
@@ -38,76 +38,87 @@
     </div> -->
 
     <!-- SKILL -->
-    <section class="profil">
-        <h1>I work using several programming languages and framework</h1><br><br>
-        <div class="img">
-            <div class="image-container">
-                <img src="aset/html.png" alt="Image 1" class="circle-image">
-                <p>HTML</p>
-            </div>
-            <div class="image-container">
-                <img src="aset/css.png" alt="Image 2" class="circle-image">
-                <p>CSS</p>
-            </div>
-            <div class="image-container">
-                <img src="aset/js.webp" alt="Image 3" class="circle-image">
-                <p>JAVASCRIPT</p>
-            </div>
-            <div class="image-container">
-                <img src="aset/react.png" alt="Image 3" class="circle-image">
-                <p>REACTJS</p>
-            </div>
-            <div class="image-container">
-                <img src="aset/NODE.png" alt="Image 3" class="circle-image">
-                <p>NODEJS</p>
-            </div>
-            <div class="image-container">
-                <img src="aset/topologi.jpg" alt="image 4" class="circle-image">
-                <p>NETWORK ADMINISTRATOR</p>
-            </div>
+    <section class="profil" id="profil">
+      <h1>I work using several programming languages and framework</h1>
+      <br /><br />
+      <div class="img">
+        <div class="image-container">
+          <img src="aset/html.png" alt="Image 1" class="circle-image" />
+          <p>HTML</p>
         </div>
+        <div class="image-container">
+          <img src="aset/css.png" alt="Image 2" class="circle-image" />
+          <p>CSS</p>
+        </div>
+        <div class="image-container">
+          <img src="aset/js.webp" alt="Image 3" class="circle-image" />
+          <p>JAVASCRIPT</p>
+        </div>
+        <div class="image-container">
+          <img src="aset/react.png" alt="Image 3" class="circle-image" />
+          <p>REACTJS</p>
+        </div>
+        <div class="image-container">
+          <img src="aset/NODE.png" alt="Image 3" class="circle-image" />
+          <p>NODEJS</p>
+        </div>
+        <div class="image-container">
+          <img src="aset/topologi.jpg" alt="image 4" class="circle-image" />
+          <p>NETWORK ADMINISTRATOR</p>
+        </div>
+      </div>
     </section>
 
     <!-- MESSAGE -->
-    <section class="form">
-            <section class="inputan">
-                <h1>send me a message</h1>
-                <form id="myForm">
-                    <label for="nama">nama</label>
-                    <input type="text" id="nama" name="nama"><br><br>
-                    <span class="error" id="namaError"></span><br>
-    
-                    <label for="nomorhp">no HP</label>
-                    <input type="number" id="nomorhp" name="nomorhp"><br><br>
-                    <span class="error" id="nomorhpError"></span><br>
-    
-                    <label for="tanggal">tanggal</label>
-                    <input type="date" id="tanggal" name="tanggal"><br><br>
-                    <span class="error" id="tanggalError"></span><br>
-    
-                    <label>Jenis Kelamin</label>
-                    <input type="checkbox" id="laki" name="jenis_kelamin" value="Laki-laki">
-                    <label for="laki" class="inline-label">Laki-laki</label>
-                    <input type="checkbox" id="perempuan" name="jenis_kelamin" value="Perempuan">
-                    <label for="perempuan" class="inline-label">Perempuan</label><br><br>
-                    <span class="error" id="jenisKelaminError"></span><br>
-    
-                    <label for="pesan">pesan</label>
-                    <textarea id="pesan" name="pesan" class="input-same-length"></textarea><br><br>
-                    <span class="error" id="pesanError"></span><br>
-    
-                    <input type="submit" value="Send" class="submit">
-                </form>
-            </section>
+    <section class="form" id="form-message">
+      <section class="inputan">
+        <h1>send me a message</h1>
+        <form id="myForm">
+          <label for="nama">nama</label>
+          <input type="text" id="nama" name="nama" /><br /><br />
+          <span class="error" id="namaError"></span><br />
+
+          <label for="nomorhp">no HP</label>
+          <input type="number" id="nomorhp" name="nomorhp" /><br /><br />
+          <span class="error" id="nomorhpError"></span><br />
+
+          <label for="tanggal">tanggal</label>
+          <input type="date" id="tanggal" name="tanggal" /><br /><br />
+          <span class="error" id="tanggalError"></span><br />
+
+          <label>Jenis Kelamin</label>
+          <input
+            type="checkbox"
+            id="laki"
+            name="jenis_kelamin"
+            value="Laki-laki"
+          />
+          <label for="laki" class="inline-label">Laki-laki</label>
+          <input
+            type="checkbox"
+            id="perempuan"
+            name="jenis_kelamin"
+            value="Perempuan"
+          />
+          <label for="perempuan" class="inline-label">Perempuan</label
+          ><br /><br />
+          <span class="error" id="jenisKelaminError"></span><br />
+
+          <label for="pesan">pesan</label>
+          <textarea id="pesan" name="pesan" class="input-same-length"></textarea
+          ><br /><br />
+          <span class="error" id="pesanError"></span><br />
+
+          <input type="submit" value="Send" class="submit" />
+        </form>
+      </section>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
-
-
-</body>
+  </body>
 </html>
